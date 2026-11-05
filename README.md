@@ -3,10 +3,7 @@
 </p>
 
 **mmerr** is a dark colorscheme for Neovim, inspired by the anime *Cyberpunk: Edgerunners*.
-
-It aims to be a simple theme with a cyberpunk edge, using as few colors as possible.
 Character-inspired accent colors from both seasons are woven throughout the theme.
-(Rebecca is my oshi! And congrats on the release of Season 2!!🎉)
 
 > This is an unofficial, fan-made theme.
 
