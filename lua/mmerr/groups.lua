@@ -113,7 +113,7 @@ function M.setup(palette)
     DiagnosticError = { fg = palette.red },
     DiagnosticWarn = { fg = palette.yellow },
     DiagnosticInfo = { fg = palette.blue },
-    DiagnosticHint = { fg = palette.lavender },
+    DiagnosticHint = { fg = palette.ice },
     DiagnosticOk = { fg = palette.turquoise },
 
     DiagnosticVirtualTextError = { link = "DiagnosticError" },
@@ -131,7 +131,7 @@ function M.setup(palette)
     DiagnosticUnderlineError = { undercurl = true, sp = palette.red },
     DiagnosticUnderlineWarn = { undercurl = true, sp = palette.yellow },
     DiagnosticUnderlineInfo = { undercurl = true, sp = palette.blue },
-    DiagnosticUnderlineHint = { undercurl = true, sp = palette.lavender },
+    DiagnosticUnderlineHint = { undercurl = true, sp = palette.ice },
     DiagnosticUnderlineOk = { undercurl = true, sp = palette.turquoise },
 
     DiagnosticFloatingError = { link = "DiagnosticError" },
@@ -147,7 +147,7 @@ function M.setup(palette)
     DiagnosticSignOk = { link = "DiagnosticOk" },
 
     DiagnosticDeprecated = { strikethrough = true, sp = palette.red },
-    DiagnosticUnnecessary = { link = "Comment" },
+    DiagnosticUnnecessary = { fg = palette.moon },
 
     -- lsp (help lsp-highlight)
     LspReferenceText = { fg = palette.white, bg = palette.rebeccapurple },
