@@ -5,7 +5,7 @@ local palette = {
 
   black = "#050a15",
   charcoal = "#202029",
-  graphite = "#41414a",
+  graphite = "#36354a",
   gray = "#6e7174",
   moon = "#c6c4ca",
   white = "#eff7fe",
