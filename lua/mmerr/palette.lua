@@ -4,6 +4,8 @@ local palette = {
   fg = "#eff7fe",
 
   black = "#050a15",
+  charcoal = "#202029",
+  graphite = "#41414a",
   gray = "#6e7174",
   white = "#eff7fe",
   pure_white = "#ffffff",
@@ -24,9 +26,11 @@ local palette = {
   cloud = "#d6e7fb",
   blue = "#417cff",
   dusk = "#6874b3",
+  twilight = "#404c8b",
   navy = "#222641",
   lavender = "#b9bfff",
   iris = "#5f5fff",
+  koamaru = "#333366",
   purple = "#948cf3",
   rebeccapurple = "#663399",
   violet = "#9d00ff",
@@ -36,11 +40,6 @@ local palette = {
   rose = "#ff5890",
   folly = "#fe0045",
   coral = "#feb2b2",
-
-  bg_charcoal = "#202029",
-  bg_gray = "#41414a",
-  bg_dusk = "#404c8b",
-  bg_blue = "#333366",
 }
 
 return palette

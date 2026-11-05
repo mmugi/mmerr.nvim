@@ -12,8 +12,8 @@ function M.setup(palette)
     TermCursor = { reverse = true },
 
     CursorLine = { underline = true, sp = palette.purple },
-    CursorColumn = { bg = palette.bg_dusk },
-    ColorColumn = { bg = palette.bg_dusk },
+    CursorColumn = { bg = palette.twilight },
+    ColorColumn = { bg = palette.twilight },
     MatchParen = { fg = palette.white, bg = palette.rose },
 
     LineNr = { fg = palette.dusk },
@@ -35,7 +35,7 @@ function M.setup(palette)
     CursorLineFold = { link = "SignColumn" },
 
     Directory = { fg = palette.blue },
-    QuickFixLine = { bg = palette.bg_blue },
+    QuickFixLine = { bg = palette.koamaru },
 
     WinSeparator = { fg = palette.dusk },
     MsgSeparator = { link = "WinSeparator" },
@@ -69,7 +69,7 @@ function M.setup(palette)
     StderrMsg = { link = "ErrorMsg" },
     StdoutMsg = {},
 
-    NormalFloat = { fg = palette.fg, bg = palette.bg_charcoal },
+    NormalFloat = { fg = palette.fg, bg = palette.charcoal },
     FloatBorder = { link = "NormalFloat" },
     Title = { fg = palette.cyan, bold = true },
     FloatTitle = { link = "Title" },
@@ -77,7 +77,7 @@ function M.setup(palette)
     FloatShadow = { bg = palette.black, blend = 80 },
     FloatShadowThrough = { bg = palette.black, blend = 100 },
 
-    Pmenu = { fg = palette.fg, bg = palette.bg_charcoal },
+    Pmenu = { fg = palette.fg, bg = palette.charcoal },
     PmenuSel = { fg = palette.white, bg = palette.iris },
     PmenuMatch = { fg = palette.purple },
     PmenuMatchSel = { fg = palette.lavender, bg = palette.iris },
@@ -99,7 +99,7 @@ function M.setup(palette)
     SnippetTabstopActive = { link = "SnippetTabstop" },
 
     DiffAdd = { fg = palette.black, bg = palette.turquoise },
-    DiffChange = { fg = palette.white, bg = palette.bg_blue },
+    DiffChange = { fg = palette.white, bg = palette.koamaru },
     DiffDelete = { fg = palette.white, bg = palette.folly },
     DiffText = { fg = palette.white, bg = palette.blue },
     DiffTextAdd = { link = "DiffText" },
@@ -297,8 +297,8 @@ function M.setup(palette)
     TelescopeMatching = { fg = palette.purple },
     TelescopePreviewMatch = { link = "CurSearch" },
     TelescopePreviewLine = { link = "TelescopePreviewMatch" },
-    TelescopeSelection = { bg = palette.bg_gray },
-    TelescopeSelectionCaret = { fg = palette.pink, bg = palette.bg_gray },
+    TelescopeSelection = { bg = palette.graphite },
+    TelescopeSelectionCaret = { fg = palette.pink, bg = palette.graphite },
     TelescopeBorder = { link = "FloatBorder" },
     TelescopePromptPrefix = { fg = palette.pink },
     TelescopePromptCounter = { fg = palette.gray },
