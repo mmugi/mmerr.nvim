@@ -150,7 +150,7 @@ function M.setup(palette)
     DiagnosticUnnecessary = { fg = palette.moon },
 
     -- lsp (help lsp-highlight)
-    LspReferenceText = { fg = palette.white, bg = palette.rebeccapurple },
+    LspReferenceText = { fg = palette.white, bg = palette.violet },
     LspReferenceRead = { link = "LspReferenceText" },
     LspReferenceWrite = { link = "LspReferenceText" },
     LspReferenceTarget = { link = "LspReferenceText" },
