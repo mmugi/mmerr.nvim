@@ -43,7 +43,7 @@ require("mmerr").setup({
   transparent_bg = false, -- unsets the background colors
   terminal_colors = true, -- sets the colors for :terminal
   palette_overrides = {},
-  highlight_overrides = {},
+  edit_highlights = function(groups, palette) end,
 })
 
 -- setup() must be called before loading the colorscheme
@@ -66,7 +66,7 @@ vim.cmd.colorscheme("mmerr")
 
 ### Overrides
 
-You can override the palette and highlight groups with `palette_overrides` and `highlight_overrides`.
+You can override the palette with `palette_overrides` and the highlight groups with `edit_highlights`.
 
 #### Palette
 
@@ -80,19 +80,26 @@ require("mmerr").setup({
 
 #### Highlight groups
 
+`edit_highlights` is called with the highlight groups and the palette.
+In this function, edit the highlight groups to change some attributes of a group, replace a group, or add your own groups.
+
 ```lua
 require("mmerr").setup({
-  highlight_overrides = function(palette)
-    return {
-      Comment = { fg = palette.lavender, italic = true },
-      MyPluginGroup = { fg = palette.rose },
-    }
+  edit_highlights = function(groups, palette)
+    groups.Comment.italic = true
+    groups.Pmenu.bg = nil
+    groups.MyHighlightGroup = { fg = palette.red }
   end,
 })
 ```
 
-Each entry replaces the whole group, so attributes you don't specify are cleared.
-You can also add groups for other plugins or your own config.
+> [!NOTE]
+> Attributes set together with `link` are ignored.
+> To add attributes to a linked group, replace it with the group it links to, extended with the attributes:
+>
+> ```lua
+> groups.FloatTitle = vim.tbl_extend("force", groups.Title, { italic = true })
+> ```
 
 ## Using the palette
 
