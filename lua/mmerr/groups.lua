@@ -4,7 +4,6 @@ function M.setup(palette)
   return {
     -- editor (help highlight-groups)
     Normal = { fg = palette.fg, bg = palette.bg },
-    NormalNC = { link = "Normal" },
 
     Cursor = { fg = palette.white, bg = palette.blue },
     CursorIM = { link = "Cursor" },
@@ -16,10 +15,10 @@ function M.setup(palette)
     ColorColumn = { bg = palette.twilight },
     MatchParen = { fg = palette.white, bg = palette.rose },
 
-    LineNr = { fg = palette.dusk },
+    LineNr = { fg = palette.gray },
     LineNrAbove = { link = "LineNr" },
     LineNrBelow = { link = "LineNr" },
-    CursorLineNr = { fg = palette.fg },
+    CursorLineNr = { fg = palette.pure_white },
 
     EndOfBuffer = { link = "LineNr" },
     NonText = { fg = palette.dusk },
@@ -53,7 +52,7 @@ function M.setup(palette)
     StatusLineTerm = { fg = palette.black, bg = palette.cyan },
     StatusLineTermNC = { link = "StatusLineNC" },
     WinBar = { link = "Normal" },
-    WinBarNC = { link = "NormalNC" },
+    WinBarNC = { link = "WinBar" },
     TabLine = { fg = palette.dusk },
     TabLineSel = { fg = palette.white, bg = palette.twilight },
     TabLineFill = { link = "TabLine" },
@@ -69,13 +68,13 @@ function M.setup(palette)
     StderrMsg = { link = "ErrorMsg" },
     StdoutMsg = {},
 
-    NormalFloat = { fg = palette.fg, bg = palette.charcoal },
+    NormalFloat = { fg = palette.cyan, bg = palette.black },
     FloatBorder = { link = "NormalFloat" },
     Title = { fg = palette.lime, bold = true },
-    FloatTitle = { link = "Title" },
+    FloatTitle = { fg = palette.cyan, bg = palette.black, bold = true },
     FloatFooter = { link = "FloatTitle" },
-    FloatShadow = { bg = palette.black, blend = 80 },
-    FloatShadowThrough = { bg = palette.black, blend = 100 },
+    FloatShadow = { bg = palette.gray, blend = 80 },
+    FloatShadowThrough = { bg = palette.gray, blend = 100 },
 
     Pmenu = { fg = palette.scarlet, bg = palette.black },
     PmenuSel = { reverse = true, bold = true },
@@ -293,13 +292,13 @@ function M.setup(palette)
     ["@markup.heading.2.delimiter.vimdoc"] = { link = "NonText" },
 
     -- telescope
-    TelescopeNormal = { link = "NormalFloat" },
+    TelescopeNormal = { fg = palette.fg, bg = palette.charcoal },
     TelescopeMatching = { fg = palette.purple },
     TelescopePreviewMatch = { link = "CurSearch" },
     TelescopePreviewLine = { link = "TelescopePreviewMatch" },
     TelescopeSelection = { bg = palette.graphite },
     TelescopeSelectionCaret = { fg = palette.capri, bg = palette.graphite },
-    TelescopeBorder = { link = "FloatBorder" },
+    TelescopeBorder = { link = "TelescopeNormal" },
     TelescopePromptPrefix = { fg = palette.coral },
     TelescopePromptCounter = { link = "TelescopePromptPrefix" },
     TelescopeTitle = { bold = true },

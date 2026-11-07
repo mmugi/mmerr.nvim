@@ -19,7 +19,9 @@ M.options = vim.deepcopy(M.default_options)
 local TRANSPARENT_HIGHLIGHT_GROUPS = {
   "Normal",
   "NormalFloat",
+  "FloatTitle",
   "Pmenu",
+  "TelescopeNormal",
 }
 
 ---@param opts? mmerr.Config
