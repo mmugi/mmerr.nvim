@@ -3,7 +3,7 @@ local palette = {
   bg = "#222641",
   fg = "#eff7fe",
 
-  black = "#050a15",
+  black = "#08080b",
   charcoal = "#202029",
   graphite = "#36354a",
   gray = "#6e7174",
