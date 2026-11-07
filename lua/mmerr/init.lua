@@ -84,4 +84,28 @@ function M.load()
   end
 end
 
+function M.reload()
+  for name in pairs(package.loaded) do
+    if name:match("^mmerr%.") then
+      package.loaded[name] = nil
+    end
+  end
+  vim.cmd.colorscheme("mmerr")
+end
+
+vim.api.nvim_create_user_command("MmerrReload", M.reload, {
+  desc = "Reload the palette and highlight groups of mmerr",
+})
+
+vim.api.nvim_create_autocmd("BufWritePost", {
+  group = vim.api.nvim_create_augroup("mmerr_autoreload", { clear = true }),
+  pattern = vim.fs.dirname(debug.getinfo(1, "S").source:sub(2)) .. "/*.lua",
+  desc = "Reload mmerr when its files are saved while vim.g.mmerr_autoreload is true",
+  callback = function()
+    if vim.g.mmerr_autoreload then
+      vim.schedule(M.reload)
+    end
+  end,
+})
+
 return M
