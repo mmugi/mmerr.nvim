@@ -317,6 +317,31 @@ function M.setup(palette)
     GitSignsAddInline = { fg = palette.turquoise, bg = palette.black },
     GitSignsChangeInline = { link = "GitSignsAddInline" },
     GitSignsDeleteInline = { fg = palette.folly, bg = palette.white },
+
+    -- lazy
+    LazyNormal = { link = "NormalFloat" },
+    LazyH1 = { link = "LazyButtonActive" },
+    LazyButton = { link = "LazyNormal" },
+    LazyButtonActive = { reverse = true, bold = true },
+    LazySpecial = { bold = true },
+    LazyValue = { link = "LazyNormal" },
+    LazyDir = { link = "LazyNormal" },
+    LazyLocal = { fg = palette.pure_white },
+    LazyProgressDone = { fg = palette.green },
+    LazyProgressTodo = { fg = palette.gray },
+    LazyCommit = { fg = palette.moon },
+    LazyCommitType = { fg = palette.pure_white, bold = true },
+    LazyCommitIssue = { fg = palette.pure_white },
+    LazyReasonStart = { fg = palette.green },
+    LazyReasonPlugin = { link = "LazyReasonStart" },
+    LazyReasonEvent = { link = "LazyReasonStart" },
+    LazyReasonKeys = { link = "LazyReasonStart" },
+    LazyReasonCmd = { link = "LazyReasonStart" },
+    LazyReasonFt = { link = "LazyReasonStart" },
+    LazyReasonSource = { link = "LazyReasonStart" },
+    LazyReasonRuntime = { link = "LazyReasonStart" },
+    LazyReasonImport = { link = "LazyReasonStart" },
+    LazyReasonRequire = { link = "LazyReasonStart" },
   }
 end
 
