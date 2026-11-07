@@ -4,13 +4,13 @@ local M = {}
 ---@field transparent_bg? boolean
 ---@field terminal_colors? boolean
 ---@field palette_overrides? mmerr.Palette
----@field highlight_overrides? table<string, vim.api.keyset.highlight>|fun(palette: mmerr.Palette): table<string, vim.api.keyset.highlight>
+---@field edit_highlights? fun(groups: table<string, vim.api.keyset.highlight>, palette: mmerr.Palette)
 
 M.default_options = {
   transparent_bg = false,
   terminal_colors = true,
   palette_overrides = {},
-  highlight_overrides = {},
+  edit_highlights = function(groups, palette) end,
 }
 
 M.options = vim.deepcopy(M.default_options)
@@ -21,13 +21,6 @@ local TRANSPARENT_HIGHLIGHT_GROUPS = {
   "NormalFloat",
   "Pmenu",
 }
-
-local function override_groups(groups, overrides)
-  for group, tbl in pairs(overrides) do
-    groups[group] = tbl
-  end
-  return groups
-end
 
 ---@param opts? mmerr.Config
 function M.setup(opts)
@@ -56,12 +49,7 @@ function M.load()
     end
   end
 
-  -- override highlight groups
-  if type(M.options.highlight_overrides) == "table" then
-    override_groups(groups, M.options.highlight_overrides)
-  elseif type(M.options.highlight_overrides) == "function" then
-    override_groups(groups, M.options.highlight_overrides(palette))
-  end
+  M.options.edit_highlights(groups, palette)
 
   -- apply theme
   for k, v in pairs(groups) do
