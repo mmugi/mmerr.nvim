@@ -71,12 +71,12 @@ function M.load()
       palette.white,
       palette.gray,
       palette.folly,
-      palette.mint,
+      palette.green,
       palette.yellow,
-      palette.sky,
+      palette.capri,
       palette.rose,
       palette.lavender,
-      palette.pure_white,
+      palette.mint,
     }
     for i, color in ipairs(terminal_colors) do
       vim.g["terminal_color_" .. (i - 1)] = color
