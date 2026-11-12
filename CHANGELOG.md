@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/mmugi/mmerr.nvim/compare/v2.0.0...v2.1.0) (2026-11-12)
+
+
+### Features
+
+* change the bright green, blue, and white terminal colors ([#19](https://github.com/mmugi/mmerr.nvim/issues/19)) ([05e8471](https://github.com/mmugi/mmerr.nvim/commit/05e8471d8bf34c5b95ac98b7798d2e66d1c8d096))
+
 ## [2.0.0](https://github.com/mmugi/mmerr.nvim/compare/v1.0.0...v2.0.0) (2026-11-07)
 
 
