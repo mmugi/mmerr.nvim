@@ -11,7 +11,7 @@ function M.setup(palette)
     TermCursor = { reverse = true },
 
     CursorLine = { underline = true, sp = palette.folly },
-    CursorColumn = { bg = palette.twilight },
+    CursorColumn = { bg = palette.folly },
     ColorColumn = { bg = palette.twilight },
     MatchParen = { fg = palette.white, bg = palette.rose },
 
@@ -70,7 +70,7 @@ function M.setup(palette)
 
     NormalFloat = { fg = palette.cyan, bg = palette.black },
     FloatBorder = { link = "NormalFloat" },
-    Title = { fg = palette.lime, bold = true },
+    Title = { fg = palette.cyan, bold = true },
     FloatTitle = { fg = palette.cyan, bg = palette.black, bold = true },
     FloatFooter = { link = "FloatTitle" },
     FloatShadow = { bg = palette.gray, blend = 80 },

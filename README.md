@@ -7,7 +7,7 @@ Character-inspired accent colors from both seasons are woven throughout the them
 
 > This is an unofficial, fan-made theme.
 
-![mmerr screenshot](https://github.com/user-attachments/assets/e72ed3ee-7b79-4b36-9199-09a55267faa2)
+![mmerr screenshot](https://github.com/user-attachments/assets/98bf0a3f-ac0f-45f0-a483-0061338c14e5)
 
 ## Requirements
 
