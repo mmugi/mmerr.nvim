@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0](https://github.com/mmugi/mmerr.nvim/compare/v2.0.0...v2.1.0) (2026-11-19)
+
+
+### Features
+
+* change the bright green, blue, and white terminal colors ([#19](https://github.com/mmugi/mmerr.nvim/issues/19)) ([05e8471](https://github.com/mmugi/mmerr.nvim/commit/05e8471d8bf34c5b95ac98b7798d2e66d1c8d096))
+* **editor:** change the CursorColumn and Title colors ([#21](https://github.com/mmugi/mmerr.nvim/issues/21)) ([ceac495](https://github.com/mmugi/mmerr.nvim/commit/ceac4957d951733ea65fe1aa91d77a70076d8cd4))
+
 ## [2.0.0](https://github.com/mmugi/mmerr.nvim/compare/v1.0.0...v2.0.0) (2026-11-07)
 
 
